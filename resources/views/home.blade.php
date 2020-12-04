@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="card-deck">
-            <div class="card border-danger mb-3">                                
+            <div class="card border-danger mb-3 text-center" > 
                 <div class="card-header text-danger">{{ __('Módulo Empleados') }}</div>
                 <img class="card-img-top" src="https://www.icr-evolution.com/wp-content/uploads/2017/10/people.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -15,7 +15,9 @@
                         </div>
                     @endif
                     
-                    <a href="#" class="btn btn-primary">Crear un Nuevo Empleado</a>
+                    <a href="{{ route('user.create') }}"class="btn btn-primary">Crear un Nuevo Empleado</a>
+
+                    <a href="{{ route('user.index') }}" class="btn btn-primary">Listar Empleados</a> 
 
                     
                     
